@@ -43,7 +43,7 @@ const Header = ({
     <header className="sticky top-0 z-50 bg-background text-foreground shadow-md">
       <div className="max-w-6xl mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <div className="flex items-center space-x-6">
+          <div className="flex items-center space-x-4 sm:space-x-6">
             <DarkModeSwitch darkMode={darkMode} setDarkMode={setDarkMode} />
             <a
               href={resumeUrl}
@@ -51,11 +51,14 @@ const Header = ({
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FileText className="mr-2 -ml-1 h-7 w-7" aria-hidden="true" />
+              <FileText
+                className="mr-2 -ml-1 h-5 w-5 sm:h-7 sm:w-7"
+                aria-hidden="true"
+              />
               Resume
             </a>
           </div>
-          <div className="flex items-center space-x-6">
+          <div className="flex items-center space-x-4 sm:space-x-6">
             <div className="flex space-x-4">
               {IconsData.map((iconData, index) => (
                 <ClickableIcon
@@ -71,7 +74,10 @@ const Header = ({
               target="_blank"
               rel="noopener noreferrer"
             >
-              <MailIcon className="mr-2 -ml-1 h-7 w-7" aria-hidden="true" />
+              <MailIcon
+                className="mr-2 -ml-1 h-5 w-5 sm:h-7 sm:w-7"
+                aria-hidden="true"
+              />
               Email me
             </a>
           </div>
