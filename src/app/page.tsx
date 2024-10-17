@@ -1,6 +1,6 @@
 "use client";
 
-import TechnologyCarousel from "@/components/TechCarousel";
+import TechCarousel from "@/components/TechCarousel";
 import Image from "next/image";
 
 const technologies = [
@@ -9,6 +9,7 @@ const technologies = [
   { name: "React", image: "/images/techs/react.png" },
   { name: "Next.js", image: "/images/techs/next.png" },
   { name: "NodeJS", image: "/images/techs/node.png" },
+  { name: "Tailwind CSS", image: "/images/techs/tailwind.png" },
   { name: "GraphQL", image: "/images/techs/gql.png" },
   { name: "Electron", image: "/images/techs/electron.png" },
   { name: "Git", image: "/images/techs/git.png" },
@@ -54,7 +55,7 @@ export default function Home() {
           </div>
           <h2 className="text-3xl font-bold mb-6">My Tech Stack</h2>
           <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
-            <TechnologyCarousel technologies={technologies} speed={50} />
+            <TechCarousel technologies={technologies} speed={50} />
           </div>
         </section>
         <section className="mb-12">
