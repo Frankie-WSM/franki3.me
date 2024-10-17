@@ -14,8 +14,7 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        sans: ["var(--font-geist-sans)", "Arial", "sans-serif"],
-        mono: ["var(--font-geist-mono)", "monospace"],
+        gabarito: ["var(--font-gabarito)"],
       },
     },
   },
