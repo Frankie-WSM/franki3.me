@@ -3,21 +3,14 @@ import localFont from "next/font/local";
 import "./globals.css";
 import ClientWrapper from "../components/ClientWrapper";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const gabarito = localFont({
+  src: "./fonts/Gabarito-Regular.ttf",
+  variable: "--font-gabarito",
 });
 
 export const metadata: Metadata = {
-  title: "Frankie McMorrow - Portfolio",
-  description: "Personal portfolio of Frankie McMorrow",
+  title: "franki3.me",
+  description: "Personal website of Frankie McMorrow",
 };
 
 export default function RootLayout({
@@ -27,9 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${gabarito.variable} antialiased`}>
         <ClientWrapper>{children}</ClientWrapper>
       </body>
     </html>

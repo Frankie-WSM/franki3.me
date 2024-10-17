@@ -32,9 +32,14 @@ export default function Home() {
                 objectFit="cover"
               />
             </div>
-            <h1 className="text-5xl sm:text-7xl font-bold text-center sm:text-left">
-              Hi! I&apos;m Frankie
-            </h1>
+            <div className="flex flex-col items-center sm:space-y-1">
+              <h1 className="text-5xl sm:text-7xl font-bold text-center sm:text-left">
+                Hi! I&apos;m Frankie
+              </h1>
+              <h2 className="text-xl sm:text-2xl font-bold text-center sm:text-left text-gray-400">
+                (Also Frank)
+              </h2>
+            </div>
           </div>
           <div className="text-center sm:text-left">
             <p className="text-l sm:text-2xl my-8">
