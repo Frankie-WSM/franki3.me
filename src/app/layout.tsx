@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import localFont from "next/font/local";
 import "./globals.css";
 import ClientWrapper from "../components/ClientWrapper";
@@ -22,6 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${gabarito.variable} antialiased`}>
         <ClientWrapper>{children}</ClientWrapper>
+        <Analytics />
       </body>
     </html>
   );
