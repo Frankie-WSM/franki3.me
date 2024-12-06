@@ -1,6 +1,7 @@
 "use client";
 
 import TechCarousel from "@/components/TechCarousel";
+import ProjectTechStack from "@/components/ProjectTechStack";
 import Image from "next/image";
 
 const technologies = [
@@ -45,7 +46,7 @@ export default function Home() {
           <div className="text-center sm:text-left">
             <p className="text-l sm:text-2xl my-8">
               A full-stack developer passionate about building bespoke web
-              experiences as well as useful and fun tools.
+              experiences, powerful mobile apps, and fun tools.
             </p>
             <p className="text-l sm:text-2xl my-8">
               I&apos;m currently studying for my undergrad in Computer Science
@@ -61,16 +62,33 @@ export default function Home() {
         <section className="mb-12">
           <h3 className="text-2xl font-bold mb-4">My Projects</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
-              <h4 className="text-xl font-semibold mb-2">Globe Hopper</h4>
-              <p>A fun platformer game built with Pygame.</p>
+            <div className="bg-gray-100 dark:bg-gray-800 rounded-xl p-4 flex flex-col h-full">
+              <div className="flex-1">
+                <h4 className="text-xl font-semibold mb-2">Globe Hopper</h4>
+                <p>A fun platformer game built with Pygame.</p>
+              </div>
+              <ProjectTechStack
+                technologies={[
+                  { name: "Python", image: "/images/techs/py.png" },
+                  { name: "Pygame", image: "/images/techs/pygame.png" },
+                ]}
+              />
             </div>
-            <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
-              <h4 className="text-xl font-semibold mb-2">Babblr</h4>
-              <p>
-                A language learning website, using LLMs to roleplay different
-                situations. (WIP)
-              </p>
+            <div className="bg-gray-100 dark:bg-gray-800 rounded-xl p-4 flex flex-col h-full">
+              <div className="flex-1">
+                <h4 className="text-xl font-semibold mb-2">Babblr</h4>
+                <p>
+                  A language learning app, using LLMs to roleplay different
+                  situations. (WIP)
+                </p>
+              </div>
+              <ProjectTechStack
+                technologies={[
+                  { name: "Flutter", image: "/images/techs/flutter.png" },
+                  { name: "Dart", image: "/images/techs/dart.png" },
+                  { name: "AWS Amplify", image: "/images/techs/amplify.png" },
+                ]}
+              />
             </div>
           </div>
         </section>
