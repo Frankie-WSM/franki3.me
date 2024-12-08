@@ -62,7 +62,7 @@ export default function Home() {
         <section className="mb-12">
           <h3 className="text-2xl font-bold mb-4">My Projects</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-gray-100 dark:bg-gray-800 rounded-xl p-4 flex flex-col h-full">
+            <div className="bg-gray-100 dark:bg-gray-800 rounded-3xl p-4 flex flex-col h-full">
               <div className="flex-1">
                 <h4 className="text-xl font-semibold mb-2">Globe Hopper</h4>
                 <p>A fun platformer game built with Pygame.</p>
@@ -74,12 +74,12 @@ export default function Home() {
                 ]}
               />
             </div>
-            <div className="bg-gray-100 dark:bg-gray-800 rounded-xl p-4 flex flex-col h-full">
+            <div className="bg-gray-100 dark:bg-gray-800 rounded-3xl p-4 flex flex-col h-full">
               <div className="flex-1">
-                <h4 className="text-xl font-semibold mb-2">Babblr</h4>
+                <h4 className="text-xl font-semibold mb-2">Babblr (WIP)</h4>
                 <p>
                   A language learning app, using LLMs to roleplay different
-                  situations. (WIP)
+                  situations.
                 </p>
               </div>
               <ProjectTechStack
@@ -88,6 +88,32 @@ export default function Home() {
                   { name: "Dart", image: "/images/techs/dart.png" },
                   { name: "AWS Amplify", image: "/images/techs/amplify.png" },
                 ]}
+              />
+            </div>
+            <div className="bg-gray-100 dark:bg-gray-800 rounded-3xl p-4 flex flex-col h-full">
+              <div className="flex-1">
+                <h4 className="text-xl font-semibold mb-2">This Website!</h4>
+                <p>
+                  A simple personal website, built with Next.js, React,
+                  TypeScript, and Tailwind CSS.
+                </p>
+              </div>
+              <ProjectTechStack
+                technologies={[
+                  { name: "Next.js", image: "/images/techs/next.png" },
+                  { name: "React", image: "/images/techs/react.png" },
+                  { name: "TypeScript", image: "/images/techs/ts.png" },
+                  { name: "Tailwind CSS", image: "/images/techs/tailwind.png" },
+                ]}
+              />
+            </div>
+            <div className="bg-gray-100 dark:bg-gray-800 rounded-3xl p-4 flex flex-col h-full">
+              <div className="flex-1">
+                <h4 className="text-xl font-semibold mb-2">More to come...</h4>
+                <p>Watch this space.</p>
+              </div>
+              <ProjectTechStack
+                technologies={[{ name: "👀", image: "/images/techs/eyes.png" }]}
               />
             </div>
           </div>
